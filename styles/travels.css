@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+* body {
+  background: #1c1c1c;
+  color: beige;
+}
+* body header {
+  overflow: hidden;
+  z-index: 2;
+}
+* body header div {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  height: 5vh;
+}
+* body header div > a {
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  color: beige;
+  font-size: 35px;
+  left: 15%;
+}
+* body header div nav {
+  position: absolute;
+  display: flex;
+  left: 65%;
+}
+* body header div nav #current {
+  background-color: rgb(2, 77, 27);
+  border-radius: 5px;
+}
+* body header div nav #current:hover {
+  background: rgb(6, 141, 51);
+}
+* body header div nav a {
+  text-decoration: none;
+  color: beige;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  z-index: 3;
+}
+* body header div nav a:hover {
+  background: rgb(6, 141, 51);
+  border-radius: 5px;
+}
+* body main {
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+}
+* body main section {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-gap: 20px;
+  margin-top: 90px;
+  justify-content: space-evenly;
+}
+* body main section div {
+  position: relative;
+}
+* body main section div img {
+  width: 90%;
+  height: 90%;
+  display: block;
+  border-radius: 15px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.15s;
+}
+* body main section div h2 {
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  color: beige;
+  text-shadow: 1px 1px 2px beige, 0 0 1em #1c1c1c, 0 0 0.2em #1c1c1c;
+  font-size: 35px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+* body main section div p {
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  color: beige;
+  text-shadow: 1px 1px 2px #1c1c1c, 0 0 1em beige, 0 0 0.2em #1c1c1c;
+  font-size: 25px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+* body main section div:hover h2,
+* body main section div:hover p {
+  opacity: 1;
+}
+* body main section div:hover img {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+* body footer {
+  width: 100%;
+  background-color: #1c1c1c;
+}
+* body footer p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+@media (max-width: 1200px) {
+  * body header > div {
+    height: 6vh;
+  }
+  * body header > div > a {
+    font-size: 30px;
+    left: 10%;
+  }
+  * body header > div > nav {
+    left: 50%;
+  }
+  * body header > div > nav > a {
+    font-size: 20px;
+  }
+  * body main {
+    height: auto;
+    min-height: 90vh;
+  }
+  * body main > section {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 30px;
+  }
+  * body main > section > div > h2 {
+    font-size: 40px;
+  }
+  * body main > section > div > p {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  * body header > div {
+    height: 6vh;
+  }
+  * body header > div > a {
+    font-size: 20px;
+    left: 10%;
+  }
+  * body header > div > nav {
+    left: 30%;
+  }
+  * body header > div > nav > a {
+    font-size: 15px;
+  }
+  * body main {
+    height: auto;
+    min-height: 90vh;
+  }
+  * body main > section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+  * body main > section > div > h2 {
+    font-size: 30px;
+  }
+  * body main > section > div > p {
+    font-size: 20px;
+  }
+  * body footer {
+    width: 95%;
+    background-color: #1c1c1c;
+  }
+  * body footer p {
+    position: relative;
+  }
+}
+@media (max-width: 425px) {
+  * body header > div {
+    height: 6vh;
+  }
+  * body header > div > a {
+    font-size: 20px;
+    left: 10%;
+  }
+  * body header > div > nav {
+    left: 25%;
+  }
+  * body header > div > nav > a {
+    font-size: 10px;
+  }
+  * body main {
+    height: auto;
+    min-height: 90vh;
+  }
+  * body main > section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  * body main > section > div > h2 {
+    font-size: 30px;
+  }
+  * body main > section > div > p {
+    font-size: 20px;
+  }
+  * body footer {
+    width: 95%;
+    background-color: #1c1c1c;
+  }
+  * body footer p {
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=travels.css.map */

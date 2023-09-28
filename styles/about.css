@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+* body {
+  background: #1c1c1c;
+  color: beige;
+}
+* body header {
+  overflow: hidden;
+  z-index: 2;
+}
+* body header div {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  height: 5vh;
+}
+* body header div > a {
+  display: flex;
+  position: absolute;
+  text-decoration: none;
+  color: beige;
+  font-size: 35px;
+  left: 23%;
+}
+* body header div nav {
+  position: absolute;
+  display: flex;
+  left: 65%;
+}
+* body header div nav #current {
+  background-color: rgb(2, 77, 27);
+  border-radius: 5px;
+}
+* body header div nav #current:hover {
+  background: rgb(6, 141, 51);
+}
+* body header div nav a {
+  text-decoration: none;
+  color: beige;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  z-index: 3;
+}
+* body header div nav a:hover {
+  background: rgb(6, 141, 51);
+  border-radius: 5px;
+}
+* body main {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  margin-top: 70px;
+  padding: 0 15%;
+}
+* body main .left {
+  position: absolute;
+  width: 15%;
+  height: 80vh;
+  background: rgb(2, 77, 27);
+  left: 27%;
+}
+* body main .left header img {
+  width: 75%;
+  border-top-right-radius: 65px;
+  border-bottom-left-radius: 65px;
+  margin: 30px 0 10px 35.5px;
+}
+* body main .left div h2 {
+  margin-left: 10%;
+  font-size: medium;
+}
+* body main .left ul {
+  list-style-type: none;
+  margin-bottom: 15%;
+}
+* body main .left ul li {
+  margin-left: 13%;
+}
+* body main .left ul li a {
+  text-decoration: none;
+  color: beige;
+}
+* body main .right {
+  position: absolute;
+  left: 45%;
+  width: 30%;
+}
+* body main .right header {
+  margin-bottom: 60px;
+}
+* body main .right header h1 {
+  margin-top: 70px;
+  margin-bottom: 5px;
+}
+* body main .right header h3 {
+  margin-left: 30%;
+}
+* body main .right div {
+  margin-bottom: 30px;
+}
+* body main .right div h2 {
+  font-size: medium;
+  margin-bottom: 10px;
+}
+* body main .right div p {
+  text-align: justify;
+  max-width: 80%;
+  text-indent: 30px;
+}
+* body footer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+@media (max-width: 1570px) {
+  * main {
+    font-size: 0.9rem;
+  }
+  * main .left header img {
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+}
+@media (max-width: 1435px) {
+  * main {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1300px) {
+  * main {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 1180px) {
+  * main {
+    font-size: 0.7rem;
+  }
+  * main .right div h2,
+  * main .left div h2 {
+    font-size: small;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */
